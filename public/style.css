@@ -1,0 +1,38 @@
+:root {
+    color-scheme: dark;
+    --cyan: #00d9ef;
+    --blue: #0755ff;
+    --red: #ff4968;
+    --muted: #a9bfd0;
+    font-family: system-ui, sans-serif;
+}
+* { box-sizing: border-box; }
+[hidden] { display: none !important; }
+body { margin: 0; background: #050608; color: #eef5ff; line-height: 1.6; min-height: 100vh; display: flex; flex-direction: column; }
+header { display: flex; align-items: center; justify-content: space-between; padding: 18px clamp(20px, 5vw, 64px); border-bottom: 1px solid #19303e; background: #090d13; }
+a { color: var(--cyan); text-decoration: none; }
+.brand { display: flex; align-items: center; gap: 12px; font-weight: 750; }
+.brand img { width: 42px; height: 42px; object-fit: contain; }
+main { width: min(900px, 92%); margin: 42px auto; flex: 1; }
+h1 { font-size: clamp(2rem, 5vw, 3.4rem); line-height: 1.12; margin: 12px 0; color: var(--cyan); }
+h2 { font-size: 1.3rem; color: var(--cyan); margin: 0 0 16px; }
+p, small { color: var(--muted); }
+.eyebrow { font-size: .75rem; letter-spacing: .16em; color: var(--cyan); }
+section { background: #0c121b; border: 1px solid #176077; border-radius: 16px; padding: clamp(18px, 4vw, 30px); margin: 22px 0; }
+.notice { border-color: #9c2841; }
+.notice h2 { color: var(--red); }
+dl { display: grid; grid-template-columns: minmax(110px, 1fr) 2fr; gap: 12px; }
+dt { color: var(--muted); }
+dd { margin: 0; overflow-wrap: anywhere; }
+button, .primary { font: inherit; font-weight: 700; border-radius: 9px; padding: 12px 18px; cursor: pointer; color: white; background: #182433; border: 1px solid #315066; }
+.primary { display: block; width: 100%; text-align: center; background: var(--blue); border-color: #3579ff; box-shadow: 0 0 22px #0755ff30; }
+button:disabled { opacity: .6; cursor: wait; }
+button:hover, .primary:hover { filter: brightness(1.15); }
+:focus-visible { outline: 3px solid var(--cyan); outline-offset: 3px; }
+input { width: 100%; background: #05080e; color: white; border: 1px solid #315066; border-radius: 8px; padding: 12px; font: inherit; margin: 6px 0 18px; }
+label { display: block; color: var(--muted); }
+.actions { display: flex; flex-wrap: wrap; gap: 8px; }
+.danger { color: var(--red); border-color: #9c2841; }
+.log { padding: 12px 0; border-bottom: 1px solid #233442; overflow-wrap: anywhere; }
+#status { color: var(--cyan); min-height: 1.5em; }
+footer { text-align: center; padding: 22px; border-top: 1px solid #19303e; color: var(--muted); font-size: .85rem; }

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HGB Meetings</title>
+    <link rel="icon" href="/logo.png">
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <header><a class="brand" href="/"><img src="/logo.png" alt="" hidden> HGB Meetings</a><a href="/admin.html">Admin</a></header>
+    <main>
+        <p class="eyebrow">HGB / SESSION ACCESS</p>
+        <h1>HGB Meeting Sessions</h1>
+        <p>Connect to your study session.</p>
+        <section>
+            <h2>Your Information</h2>
+            <dl>
+                <dt>Session ID</dt><dd id="visitor">Pending</dd>
+                <dt>Browser</dt><dd id="browser">—</dd>
+                <dt>Operating system</dt><dd id="os">—</dd>
+                <dt>Access timestamp</dt><dd id="visit">Pending</dd>
+                <dt>Connection</dt><dd id="connection">—</dd>
+            </dl>
+            <small>Browser and OS details stay on your device.</small>
+        </section>
+        <section class="notice">
+            <h2>Activity Monitoring Notice</h2>
+            <p>By clicking Join Meeting, you register a random session ID and access timestamp for moderation. Records are retained for seven days, with expired records removed on subsequent activity. No IP addresses or persistent browser identifiers are collected by this portal.</p>
+        </section>
+        <button id="join" class="primary">Join Meeting</button>
+        <a id="open" class="primary" hidden rel="noreferrer">Open Google Meet</a>
+        <p id="status" role="status"></p>
+    </main>
+    <footer>© 2026 HGB Pvt. Ltd. All rights reserved.</footer>
+    <script type="module" src="/script.js"></script>
+</body>
+</html>

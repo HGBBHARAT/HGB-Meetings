@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HGB Meetings | Admin</title>
+    <link rel="icon" href="/logo.png">
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <header><a class="brand" href="/"><img src="/logo.png" alt="" hidden> HGB Meetings</a><a href="/">Public portal</a></header>
+    <main>
+        <p class="eyebrow">HGB / ADMINISTRATION</p>
+        <h1>Admin Dashboard</h1>
+        <section id="login">
+            <h2>Sign in</h2>
+            <form id="loginForm">
+                <label for="username">Username</label>
+                <input id="username" autocomplete="username" required>
+                <label for="password">Password</label>
+                <input id="password" type="password" autocomplete="current-password" required>
+                <button class="primary">Sign in</button>
+            </form>
+        </section>
+        <div id="dashboard" hidden>
+            <section><h2>Session registrations</h2><p id="counts"></p><small>Registrations do not confirm attendance in Google Meet.</small></section>
+            <section>
+                <h2>Meeting settings</h2>
+                <form id="settings">
+                    <label for="url">Google Meet URL</label>
+                    <input id="url" type="url" required>
+                    <button class="primary">Update meeting link</button>
+                </form>
+            </section>
+            <section>
+                <h2>Recent sessions</h2>
+                <div class="actions"><button id="refresh">Refresh</button><button id="clear" class="danger">Clear logs</button><button id="logout">Logout</button></div>
+                <div id="logs"></div>
+            </section>
+        </div>
+        <p id="status" role="status"></p>
+    </main>
+    <footer>© 2026 HGB Pvt. Ltd. All rights reserved.</footer>
+    <script type="module" src="/admin.js"></script>
+</body>
+</html>
